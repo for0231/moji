@@ -1,0 +1,15 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     localhost
+    database_port:     ~
+    database_name:     moji
+    database_user:     moji
+    database_password: moji
+
+    mailer_transport:  smtp
+    mailer_host:       localhost
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            zh_CN
+    secret:            FUHNuTWUUYyVFQvAgJTrWDCBFyjYzjBw
