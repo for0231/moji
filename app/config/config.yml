@@ -4,9 +4,8 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: %locale% }
+    translator:      { fallback: en }
     secret:          %secret%
-    charset:         UTF-8
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_parameters: %kernel.debug%
@@ -16,7 +15,7 @@ framework:
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
     session:
-        auto_start:     true
+        cookie_domain: .symfony.cn
 
 # Twig Configuration
 twig:
@@ -27,7 +26,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ ]
+    bundles:        [ "FOSCommentBundle" ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -58,3 +57,20 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: Moji\Bundle\UserBundle\Entity\User
+
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: Moji\Bundle\CommentBundle\Entity\Comment
+            thread: Moji\Bundle\CommentBundle\Entity\Thread
+    service:
+        markup: markup.sundown_markdown
+
+sensio_framework_extra:
+    view: { annotations: false }

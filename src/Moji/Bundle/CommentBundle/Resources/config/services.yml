@@ -1,0 +1,5 @@
+parameters:
+
+services:
+    markup.sundown_markdown:
+        class: Moji\Bundle\CommentBundle\Markup\Sundown

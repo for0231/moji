@@ -1,0 +1,7 @@
+parameters:
+
+services:
+    moji_user.custom_provider:
+        class: Moji\Bundle\UserBundle\Security\Provider\CustomProvider
+        public: false
+        arguments: ["@fos_user.user_manager"]

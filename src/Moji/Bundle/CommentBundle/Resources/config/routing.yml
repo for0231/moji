@@ -1,0 +1,8 @@
+moji_comment_index:
+    pattern: /
+    defaults: { _controller: MojiCommentBundle:Default:index }
+
+fos_comment_api:
+    type: rest
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix: /api

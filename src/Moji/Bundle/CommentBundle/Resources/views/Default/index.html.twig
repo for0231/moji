@@ -1,0 +1,9 @@
+{% extends "MojiCommentBundle::h5bp.html.twig" %}
+
+{% block head_close %}
+<script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block body %}
+{% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 1} %}
+{% endblock %}
