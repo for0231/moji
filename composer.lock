@@ -1,5 +1,5 @@
 {
-    "hash": "5cef48ded772ef9a41cffa1b0e868101",
+    "hash": "4148e1892baac75fe2c363b2172deb87",
     "packages": [
         {
             "package": "doctrine/common",
@@ -26,8 +26,8 @@
         {
             "package": "friendsofsymfony/comment-bundle",
             "version": "dev-master",
-            "source-reference": "eaeda03999b69af1f03bb0d07053b64c2ae3c70c",
-            "commit-date": "1341871793"
+            "source-reference": "1145504ba92ba19a249f9a25642512e315eccc1c",
+            "commit-date": "1342087455"
         },
         {
             "package": "friendsofsymfony/rest",
@@ -44,14 +44,20 @@
         {
             "package": "friendsofsymfony/rest-bundle",
             "version": "dev-master",
-            "source-reference": "db40cf0203e74ad15d018c5650ff77931b915029",
-            "commit-date": "1341581983"
+            "alias-pretty-version": "0.8.x-dev",
+            "alias-version": "0.8.9999999.9999999-dev"
+        },
+        {
+            "package": "friendsofsymfony/rest-bundle",
+            "version": "dev-master",
+            "source-reference": "1dc00e3fa4e866ef7a95cdc508ac4e412786ed6b",
+            "commit-date": "1342010127"
         },
         {
             "package": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "source-reference": "3ab753e46f97d6db0d6d585f77b95a879c98b417",
-            "commit-date": "1341934223"
+            "source-reference": "9f0294ebe2f13dbb41c3ac5d19eb0655680a29c6",
+            "commit-date": "1341994043"
         },
         {
             "package": "jms/aop-bundle",
@@ -116,8 +122,8 @@
         {
             "package": "sensio/framework-extra-bundle",
             "version": "dev-master",
-            "source-reference": "4f54e5d5fb3b54fb107892684018f3704934c48d",
-            "commit-date": "1341126219"
+            "source-reference": "e9ac8f1a911ed29e30296c7f1549f53d4c94eddf",
+            "commit-date": "1342084432"
         },
         {
             "package": "sensio/generator-bundle",
@@ -164,8 +170,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "50109ebcc20ae410d4602460dc933b1e067a959f",
-            "commit-date": "1341992393"
+            "source-reference": "3b400aef78cef25148cda0fea84013e46cb8bd87",
+            "commit-date": "1342069723"
         },
         {
             "package": "twig/extensions",
@@ -190,7 +196,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "doctrine/doctrine-bundle": 20,
         "twig/extensions": 20,
